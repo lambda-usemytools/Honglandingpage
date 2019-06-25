@@ -19,3 +19,49 @@
   margin: 10px;
   font-size: 20px;
 }
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduction .tagline {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.introduction .btn {
+  font-family: 'Open Sans', sans-serif;
+  background-color: Turquoise;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+}
+.introduction .text-content {
+  background-color: LemonChiffon;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  padding: 5px 20px 5px 20px;
+}
+.introduction .text-content .text {
+  margin: 10px;
+  background-color: #a8a8a1;
+  padding: 10px;
+}
+.introduction .text-content .text .title {
+  background-color: goldenrod;
+  border: solid black;
+  padding: 20px;
+  text-align: center;
+}
+.why-use {
+  background-color: pink;
+}
+.why-use .why-title {
+  background-color: red;
+}
+.why-use .why-content {
+  background-color: blue;
+}
