@@ -57,11 +57,36 @@
   text-align: center;
 }
 .why-use {
-  background-color: pink;
+  background-color: Tan;
 }
 .why-use .why-title {
-  background-color: red;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  margin: 5px;
 }
 .why-use .why-content {
-  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+.why-use .why-content .why-text {
+  width: 30%;
+}
+.why-use .why-content .why-text li {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+}
+.why-use .why-content .why-text-2 {
+  width: 30%;
+  text-align: center;
+  margin: 30px;
+}
+.why-use .why-content .why-text-2 .btn-2 {
+  background-color: yellow;
+  color: blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
 }
