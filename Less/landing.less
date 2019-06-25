@@ -1,5 +1,18 @@
 //Styling starts here. 
 
+.container{
+    width: 100%;
+    // Medium screen styling
+    @media (max-width: 800px) {
+      width: 100%;
+      background: black;
+    };
+  
+    // Small screen styling
+    @media (max-width: 500px) {
+      width: 100%;
+      background: green;
+    };
 
 .header{
     display: flex;
@@ -8,8 +21,15 @@
     align-items: center;
     background-color:#DAAB1D;;
     height: 128px;	
-    width: 1440px;	
+    width: 100%;	
     border: 1px solid #979797;
+
+    @media(max-with: 500px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    };
+    };
 
     .logo{
         color: #1E3A46;	
@@ -18,6 +38,13 @@
         font-weight: 600;	
         line-height: 44px;
         margin: 10px 0px 10px 80px;
+
+        @media(max-with: 500px){
+            .logo{
+                color: pink;
+                font-size: 20px;	
+            };
+            };
     }
 
     nav {
@@ -44,7 +71,7 @@
 
     .hero-img{
     height: 603px;	
-    width: 1440px;
+    width: 100%;
     }
 
     .tagline{
@@ -55,7 +82,7 @@
         padding-top: 120px;
         margin-top: -400px;
         height: 160px;	
-        width: 1264px;	
+        width: 80%;	
         clip-path: polygon(50% 0, 0 100%, 100% 100%);
         color: #1E3A46;	
         font-family: "Avenir Next";	
@@ -67,7 +94,7 @@
 
     .product-feature{
         height: 547px;	
-        width: 1264px;	
+        width: 80%;	
         background-color: #EDE3C2;
         display: flex;
         flex-direction: column;
@@ -94,15 +121,15 @@
     
     
         .text-content{
-            font-family: 'Open Sans', sans-serif;
             display: flex;
             padding: 5px 20px 5px 20px;
+            width: 100%;
     
     
             .title{
                 text-align: center;
                 height: 68px;	
-                width: 368px;	
+                width: 100%;	
                 border: 3px solid #6E5710;	
                 border-radius: 3px;	
                 background-color: #DAAB1D;
@@ -121,7 +148,8 @@
                     font-size: 28px;	
                     line-height: 38px;
                     margin: 0 10px 0 10px;
-                    height: 362px;	width: 363px;	
+                    height: 362px;	
+                    width: 100%;	
                     background-color: #C0B594;
                 }
             
@@ -134,7 +162,7 @@
 
 .why-use{
     height: 420px;	
-    width: 1440px;	
+    width: 100%;	
     background-color: #C0B594;
     margin-top: 0px;
     
@@ -156,7 +184,7 @@
 
 
         .why-text{
-            width: 40%;
+            width: 100%;
             margin-left: 50px;
 
             li {
@@ -171,7 +199,7 @@
         }
 
         .why-text-2{
-            width: 40%;
+            width: 100%;
             text-align: center;
             margin-right: 120px;
             color: #1E3A46;	
@@ -257,21 +285,21 @@
         margin-left: 55px;
 
         .text{
-        margin: 0 30px 30px 30px;
         width: 100%;
+        margin: 0 20px 20px 20px;
 
         button{
             border-radius: 10px;	
             background-color: #488EAC;
             height: 48px;	
-            width: 240px;
+            width: 50%;
             color: #EDE3C2;	
             font-family: "Avenir Next";	
             font-size: 24px;	
             font-weight: 600;	
             line-height: 33px;	
             text-align: center;
-            margin-left: 120px;
+            margin-left: 150px;
             margin-top: 100px;
         }
         }
@@ -280,10 +308,11 @@
 
     
 }
+}
 
 footer{
     height: 195px;	
-    width: 1440px;	
+    width: 100%;	
     background-color: #488EAC;
     display: flex;
     justify-content: space-evenly;

@@ -1,14 +1,35 @@
-.header {
+.container {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    background: black;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    background: green;
+  }
+}
+.container .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #DAAB1D;
   height: 128px;
-  width: 1440px;
+  width: 100%;
   border: 1px solid #979797;
 }
-.header .logo {
+@media (max-with: 500px) {
+  .container .header .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .header .logo {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 32px;
@@ -16,10 +37,16 @@
   line-height: 44px;
   margin: 10px 0px 10px 80px;
 }
-.header nav {
+@media (max-with: 500px) {
+  .container .header .logo .logo {
+    color: pink;
+    font-size: 20px;
+  }
+}
+.container .header nav {
   margin: 0px 80px 0px 0px;
 }
-.header nav a {
+.container .header nav a {
   text-decoration: none;
   color: #1E3A46;
   font-family: "Avenir Next";
@@ -28,16 +55,16 @@
   line-height: 27px;
   margin: 10px;
 }
-.introduction {
+.container .introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.introduction .hero-img {
+.container .introduction .hero-img {
   height: 603px;
-  width: 1440px;
+  width: 100%;
 }
-.introduction .tagline {
+.container .introduction .tagline {
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
   text-align: center;
@@ -45,7 +72,7 @@
   padding-top: 120px;
   margin-top: -400px;
   height: 160px;
-  width: 1264px;
+  width: 80%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   color: #1E3A46;
   font-family: "Avenir Next";
@@ -53,9 +80,9 @@
   font-weight: 600;
   line-height: 38px;
 }
-.introduction .product-feature {
+.container .introduction .product-feature {
   height: 547px;
-  width: 1264px;
+  width: 80%;
   background-color: #EDE3C2;
   display: flex;
   flex-direction: column;
@@ -63,7 +90,7 @@
   padding-top: 10px;
   margin-bottom: 0px;
 }
-.introduction .product-feature .btn {
+.container .introduction .product-feature .btn {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -78,15 +105,15 @@
   line-height: 33px;
   text-align: center;
 }
-.introduction .product-feature .text-content {
-  font-family: 'Open Sans', sans-serif;
+.container .introduction .product-feature .text-content {
   display: flex;
   padding: 5px 20px 5px 20px;
+  width: 100%;
 }
-.introduction .product-feature .text-content .title {
+.container .introduction .product-feature .text-content .title {
   text-align: center;
   height: 68px;
-  width: 368px;
+  width: 100%;
   border: 3px solid #6E5710;
   border-radius: 3px;
   background-color: #DAAB1D;
@@ -97,7 +124,7 @@
   padding-top: 20px;
   margin: 10px 10px 0 10px;
 }
-.introduction .product-feature .text-content .text {
+.container .introduction .product-feature .text-content .text {
   padding: 10px 0 0 10px;
   color: #41340C;
   font-family: "Avenir Next";
@@ -105,16 +132,16 @@
   line-height: 38px;
   margin: 0 10px 0 10px;
   height: 362px;
-  width: 363px;
+  width: 100%;
   background-color: #C0B594;
 }
-.why-use {
+.container .why-use {
   height: 420px;
-  width: 1440px;
+  width: 100%;
   background-color: #C0B594;
   margin-top: 0px;
 }
-.why-use .why-title {
+.container .why-use .why-title {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 28px;
@@ -122,17 +149,17 @@
   line-height: 38px;
   padding: 20px 0 0 80px;
 }
-.why-use .why-content {
+.container .why-use .why-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 0;
 }
-.why-use .why-content .why-text {
-  width: 40%;
+.container .why-use .why-content .why-text {
+  width: 100%;
   margin-left: 50px;
 }
-.why-use .why-content .why-text li {
+.container .why-use .why-content .why-text li {
   list-style-type: none;
   color: #41340C;
   font-family: "Avenir Next";
@@ -141,8 +168,8 @@
   line-height: 33px;
   padding-bottom: 20px;
 }
-.why-use .why-content .why-text-2 {
-  width: 40%;
+.container .why-use .why-content .why-text-2 {
+  width: 100%;
   margin-right: 120px;
   color: #1E3A46;
   font-family: "Avenir Next";
@@ -150,7 +177,7 @@
   line-height: 38px;
   text-align: center;
 }
-.why-use .why-content .why-text-2 .btn-2 {
+.container .why-use .why-content .why-text-2 .btn-2 {
   text-align: center;
   padding: 5px 10px 5px 10px;
   height: 66px;
@@ -163,10 +190,10 @@
   font-weight: 600;
   margin-top: 0;
 }
-.meet-user {
+.container .meet-user {
   background-color: #E9E8E4;
 }
-.meet-user .meet-title {
+.container .meet-user .meet-title {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 28px;
@@ -174,16 +201,16 @@
   line-height: 38px;
   padding: 20px 0 0 80px;
 }
-.meet-user .meet-content {
+.container .meet-user .meet-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.meet-user .meet-content .text {
+.container .meet-user .meet-content .text {
   margin: 0 30px 30px 30px;
   text-align: center;
 }
-.meet-user .meet-content p {
+.container .meet-user .meet-content p {
   width: 70%;
   color: #41340C;
   font-family: "Avenir Next";
@@ -192,13 +219,13 @@
   text-align: left;
   margin-left: 70px;
 }
-.meet-user .meet-content p .name {
+.container .meet-user .meet-content p .name {
   text-align: right;
 }
-.work {
+.container .work {
   background-color: Cornsilk;
 }
-.work .work-title {
+.container .work .work-title {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 28px;
@@ -206,7 +233,7 @@
   line-height: 38px;
   padding: 20px 0 0 80px;
 }
-.work .work-content {
+.container .work .work-content {
   color: #41340C;
   font-family: "Avenir Next";
   font-size: 18px;
@@ -214,27 +241,27 @@
   display: flex;
   margin-left: 55px;
 }
-.work .work-content .text {
-  margin: 0 30px 30px 30px;
+.container .work .work-content .text {
   width: 100%;
+  margin: 0 20px 20px 20px;
 }
-.work .work-content .text button {
+.container .work .work-content .text button {
   border-radius: 10px;
   background-color: #488EAC;
   height: 48px;
-  width: 240px;
+  width: 50%;
   color: #EDE3C2;
   font-family: "Avenir Next";
   font-size: 24px;
   font-weight: 600;
   line-height: 33px;
   text-align: center;
-  margin-left: 120px;
+  margin-left: 150px;
   margin-top: 100px;
 }
 footer {
   height: 195px;
-  width: 1440px;
+  width: 100%;
   background-color: #488EAC;
   display: flex;
   justify-content: space-evenly;
