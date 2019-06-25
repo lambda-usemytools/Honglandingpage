@@ -6,10 +6,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: goldenrod;
+    background-color:#DAAB1D;;
+    height: 128px;	
+    width: 1440px;	
+    border: 1px solid #979797;
 
     .logo{
-        font-family: 'Open Sans', sans-serif;
+        color: #1E3A46;	
+        font-family: "Avenir Next";	
+        font-size: 32px;	
+        font-weight: 600;	
+        line-height: 44px;
         margin: 10px 0px 10px 80px;
     }
 
@@ -20,10 +27,12 @@
 
     nav a{
         text-decoration: none;
-        color: black;
-        font-family: 'Open Sans', sans-serif;
+        color: #1E3A46;	
+        font-family: "Avenir Next";	
+        font-size: 20px;	
+        font-weight: bold;	
+        line-height: 27px;
         margin: 10px;
-        font-size: 20px;
     }
 
 }
@@ -33,46 +42,80 @@
     flex-direction: column;
     align-items: center;
 
+    .hero-img{
+    height: 603px;	
+    width: 1440px;
+    }
+
     .tagline{
         font-family: 'Open Sans', sans-serif;
-        text-align: center;
-    }
-
-    .btn{
-        font-family: 'Open Sans', sans-serif;
-        background-color: Turquoise;
-        text-align: center;
-        text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        border-radius: 10px;
-        cursor: pointer;
-        padding: 5px 20px 5px 20px;
+        text-align: center;
+        background-color: #C0B594;
+        padding-top: 120px;
+        margin-top: -400px;
+        height: 160px;	
+        width: 1264px;	
+        clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        color: #1E3A46;	
+        font-family: "Avenir Next";	
+        font-size: 28px;	
+        font-weight: 600;	
+        line-height: 38px;
     }
+    
 
-
-    .text-content{
-        background-color:LemonChiffon;
-        font-family: 'Open Sans', sans-serif;
+    .product-feature{
+        height: 547px;	
+        width: 1264px;	
+        background-color: #EDE3C2;
         display: flex;
-        padding: 5px 20px 5px 20px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
 
-        .text{
-            margin: 10px;
-            background-color: rgb(168, 168, 161);
-            padding: 10px;
-
-
-            .title{
-                background-color: goldenrod;
-                border: solid black;
-                padding: 20px;
-                text-align: center;
-            }
+        .btn{
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 5px 20px 5px 20px;	
+            background-color: #488EAC;
+            color: #EDE3C2;	
+            font-family: "Avenir Next";	
+            font-size: 24px;	
+            font-weight: 600;	
+            line-height: 33px;	
+            text-align: center;
         }
-        
+    
+    
+        .text-content{
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            padding: 5px 20px 5px 20px;
+    
+            .text{
+                margin: 10px;
+                background-color: rgb(168, 168, 161);
+                padding: 10px;
+    
+    
+                .title{
+                    background-color: goldenrod;
+                    border: solid black;
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
+            
+        }
     }
-}
+
+}  
+
 
 .why-use{
     background-color: Tan;

@@ -3,10 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: goldenrod;
+  background-color: #DAAB1D;
+  height: 128px;
+  width: 1440px;
+  border: 1px solid #979797;
 }
 .header .logo {
-  font-family: 'Open Sans', sans-serif;
+  color: #1E3A46;
+  font-family: "Avenir Next";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
   margin: 10px 0px 10px 80px;
 }
 .header nav {
@@ -14,43 +21,73 @@
 }
 .header nav a {
   text-decoration: none;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  margin: 10px;
+  color: #1E3A46;
+  font-family: "Avenir Next";
   font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  margin: 10px;
 }
 .introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.introduction .hero-img {
+  height: 603px;
+  width: 1440px;
+}
 .introduction .tagline {
   font-family: 'Open Sans', sans-serif;
+  display: inline-block;
   text-align: center;
+  background-color: #C0B594;
+  padding-top: 120px;
+  margin-top: -400px;
+  height: 160px;
+  width: 1264px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  color: #1E3A46;
+  font-family: "Avenir Next";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
 }
-.introduction .btn {
-  font-family: 'Open Sans', sans-serif;
-  background-color: Turquoise;
-  text-align: center;
+.introduction .product-feature {
+  height: 547px;
+  width: 1264px;
+  background-color: #EDE3C2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.introduction .product-feature .btn {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
+  background-color: #488EAC;
+  color: #EDE3C2;
+  font-family: "Avenir Next";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
 }
-.introduction .text-content {
-  background-color: LemonChiffon;
+.introduction .product-feature .text-content {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   padding: 5px 20px 5px 20px;
 }
-.introduction .text-content .text {
+.introduction .product-feature .text-content .text {
   margin: 10px;
   background-color: #a8a8a1;
   padding: 10px;
 }
-.introduction .text-content .text .title {
+.introduction .product-feature .text-content .text .title {
   background-color: goldenrod;
   border: solid black;
   padding: 20px;
