@@ -61,7 +61,7 @@
 }
 .why-use .why-title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   margin: 5px;
 }
 .why-use .why-content {
@@ -80,7 +80,6 @@
 .why-use .why-content .why-text-2 {
   width: 30%;
   text-align: center;
-  margin: 30px;
 }
 .why-use .why-content .why-text-2 .btn-2 {
   background-color: yellow;
@@ -89,4 +88,31 @@
   font-size: 22px;
   text-align: center;
   padding: 5px 10px 5px 10px;
+}
+.meet-user {
+  background-color: gray;
+}
+.meet-user .meet-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+.meet-user .meet-content {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: flex-start;
+}
+.meet-user .meet-content p {
+  width: 70%;
+}
+.work {
+  background-color: Cornsilk;
+}
+.work .work-title {
+  font-family: 'Open Sans', sans-serif;
+}
+.work .work-content {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
 }
