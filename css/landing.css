@@ -64,12 +64,6 @@
   height: 100%;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .container .introduction .hero-img {
-    height: 60%;
-    width: 100%;
-  }
-}
 .container .introduction .tagline {
   display: inline-block;
   text-align: center;
@@ -86,6 +80,7 @@
 }
 @media (max-width: 500px) {
   .container .introduction .tagline {
+    margin-top: -300px;
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
@@ -343,7 +338,7 @@
     margin: 0 0 20px 0;
   }
 }
-.container .work .work-content .text button {
+.container .work .work-content .text .btn-3 {
   border-radius: 10px;
   background-color: #488EAC;
   height: 48px;
@@ -358,7 +353,7 @@
   margin-top: 100px;
 }
 @media (max-width: 500px) {
-  .container .work .work-content .text button {
+  .container .work .work-content .text .btn-3 {
     padding: 5px 10px 5px 10px;
     height: 40px;
     width: 180px;
