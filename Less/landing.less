@@ -2,17 +2,6 @@
 
 .container{
     width: 100%;
-    // Medium screen styling
-    @media (max-width: 800px) {
-      width: 100%;
-      background: black;
-    };
-  
-    // Small screen styling
-    @media (max-width: 500px) {
-      width: 100%;
-      background: green;
-    };
 
 .header{
     display: flex;
@@ -112,7 +101,6 @@
     
 
     .product-feature{
-        border: 3px solid blue;
         height: 100%;	
         width: 80%;	
         background-color: #EDE3C2;
@@ -150,11 +138,7 @@
     
     
         .text-content{
-            // display: flex;
-            // margin: 5px 20px 5px 20px;
-            // width: 100%;
             display: flex;
-            border: 3px solid red;
             width: 100%;
 
             @media (max-width: 500px) {
@@ -163,13 +147,10 @@
               };
 
             .text-box{
-           
-                border: 3px solid green;
                 
             
             .title{
-                text-align: center;	
-                // width: 100%;	
+                text-align: center;		
                 border: 3px solid #6E5710;	
                 border-radius: 3px;	
                 background-color: #DAAB1D;
@@ -233,16 +214,18 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-top: 0;
+        
 
         @media (max-width: 500px) {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
           };
 
 
         .why-text{
             width: 100%;
-            // margin-left: 50px;
 
             li {
                 list-style-type: none;
@@ -255,6 +238,7 @@
 
                 @media (max-width: 500px) {
                     font-size: 18px;
+                    margin-left: 0;
                   };
             }
         }
@@ -271,6 +255,9 @@
 
             @media (max-width: 500px) {
                 font-size: 18px;
+                width: 80%;
+                margin-right: 0;
+                margin-bottom: 20px;
               };
 
             .btn-2{
@@ -376,7 +363,9 @@
         @media (max-width: 500px) {
             display: flex;
             flex-direction: column;
-            margin-left: 0;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
             text-align: center;
             font-size: 16px;
           };
@@ -388,6 +377,8 @@
         @media (max-width: 500px) {
             margin-left: 0;
             text-align: center;
+            width: 80%;
+            margin: 0 0 20px 0;
           };
 
         button{
@@ -422,12 +413,22 @@
 }
 
 footer{
-    height: 195px;	
+    height: 100%;	
     width: 100%;	
     background-color: #488EAC;
     display: flex;
     justify-content: space-evenly;
 
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+      };
+
+    .footer{
+        @media (max-width: 500px) {
+            margin-left: 120px;
+          };
+    
         h5{
             color: #EDE3C2;	
             font-family: "Avenir Next";	
@@ -442,9 +443,9 @@ footer{
             font-size: 20px;	
             line-height: 27px;
             list-style-type: none;
+        
         }
-
     
-
+    }
     
 }
