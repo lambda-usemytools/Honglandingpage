@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DAAB1D;
+  height: 128px;
+  width: 100%;
+  border: 1px solid #979797;
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header .logo {
+  color: #1E3A46;
+  font-family: "Avenir Next";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 10px 0px 10px 80px;
+}
+@media (max-width: 500px) {
+  .header .logo {
+    font-size: 20px;
+    margin: 0px;
+  }
+}
+.header nav {
+  margin: 0px 80px 0px 0px;
+}
+@media (max-width: 500px) {
+  .header nav {
+    margin: 0px;
+  }
+}
+.header nav a {
+  text-decoration: none;
+  color: #1E3A46;
+  font-family: "Avenir Next";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .header nav a {
+    margin: 5px;
+  }
+}
+.tagline {
+  margin-top: -200px;
+}
