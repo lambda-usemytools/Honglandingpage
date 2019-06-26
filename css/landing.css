@@ -61,7 +61,7 @@
   align-items: center;
 }
 .container .introduction .hero-img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 .container .introduction .tagline {
@@ -80,13 +80,13 @@
 }
 @media (max-width: 500px) {
   .container .introduction .tagline {
-    margin-top: -300px;
-    font-size: 14px;
+    margin-top: -130px;
+    font-size: 0;
     display: flex;
     flex-wrap: wrap;
     display: inline-block;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 10px;
   }
 }
 .container .introduction .product-feature {
