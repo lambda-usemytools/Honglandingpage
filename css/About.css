@@ -52,6 +52,27 @@
     margin: 5px;
   }
 }
+.sharing-visual {
+  width: 100%;
+}
 .tagline {
-  margin-top: -200px;
+  margin-top: -900px;
+  margin-bottom: 850px;
+  color: Gainsboro;
+  font-family: "Comic Sans MS";
+  font-size: 40px;
+  text-align: center;
+}
+.intro {
+  display: flex;
+  justify-content: flex-start;
+}
+.intro .about {
+  color: #1E3A46;
+  font-family: "Avenir Next";
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+.intro .intro-img {
+  width: 100%;
 }
