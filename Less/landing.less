@@ -24,12 +24,13 @@
     width: 100%;	
     border: 1px solid #979797;
 
-    @media(max-with: 500px){
-    .header{
+    @media (max-width: 500px) {
         display: flex;
         flex-direction: column;
-    };
-    };
+        justify-content: center;
+        align-items: center;
+      };
+
 
     .logo{
         color: #1E3A46;	
@@ -39,16 +40,19 @@
         line-height: 44px;
         margin: 10px 0px 10px 80px;
 
-        @media(max-with: 500px){
-            .logo{
-                color: pink;
-                font-size: 20px;	
-            };
-            };
+        @media (max-width: 500px) {
+            font-size: 20px;
+            margin: 0px;
+          };
+
     }
 
     nav {
         margin: 0px 80px 0px 0px;
+
+        @media (max-width: 500px) {
+            margin: 0px;
+          };
         
     }
 
@@ -60,6 +64,10 @@
         font-weight: bold;	
         line-height: 27px;
         margin: 10px;
+
+        @media (max-width: 500px) {
+            margin: 5px;
+          };
     }
 
 }
@@ -70,8 +78,13 @@
     align-items: center;
 
     .hero-img{
-    height: 603px;	
+    height: 100%;	
     width: 100%;
+
+    @media (max-width: 500px) {
+        height:60%;
+        width:100%;
+      };
     }
 
     .tagline{
@@ -160,6 +173,8 @@
                     // width: 100%;	
                     background-color: #C0B594;
                     margin: 0 10px 0 10px;
+
+        
                 }
             }
             
@@ -251,10 +266,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
 
         .text{
             margin: 0 30px 30px 30px;
             text-align: center;
+           
         }
 
         p{
