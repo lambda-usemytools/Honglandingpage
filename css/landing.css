@@ -83,13 +83,11 @@
   }
 }
 .container .introduction .tagline {
-  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   text-align: center;
   background-color: #C0B594;
   padding-top: 120px;
   margin-top: -400px;
-  height: 160px;
   width: 80%;
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
   color: #1E3A46;
@@ -98,9 +96,18 @@
   font-weight: 600;
   line-height: 38px;
 }
+@media (max-width: 500px) {
+  .container .introduction .tagline {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    text-align: center;
+  }
+}
 .container .introduction .product-feature {
   border: 3px solid blue;
-  height: 547px;
+  height: 100%;
   width: 80%;
   background-color: #EDE3C2;
   display: flex;
@@ -112,7 +119,6 @@
 .container .introduction .product-feature .btn {
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
@@ -124,17 +130,28 @@
   line-height: 33px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container .introduction .product-feature .btn {
+    font-size: 18px;
+    padding: 3px 10px 3px 10px;
+  }
+}
 .container .introduction .product-feature .text-content {
   display: flex;
   border: 3px solid red;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .container .introduction .product-feature .text-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .introduction .product-feature .text-content .text-box {
   border: 3px solid green;
 }
 .container .introduction .product-feature .text-content .text-box .title {
   text-align: center;
-  height: 68px;
   border: 3px solid #6E5710;
   border-radius: 3px;
   background-color: #DAAB1D;
@@ -142,7 +159,7 @@
   font-family: "Avenir Next";
   font-size: 32px;
   line-height: 44px;
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 10px 10px 0 10px;
 }
 .container .introduction .product-feature .text-content .text-box .text {
@@ -151,9 +168,14 @@
   font-family: "Avenir Next";
   font-size: 20px;
   line-height: 38px;
-  height: 360px;
+  height: 250px;
   background-color: #C0B594;
   margin: 0 10px 0 10px;
+}
+@media (max-width: 500px) {
+  .container .introduction .product-feature .text-content .text-box .text {
+    font-size: 18px;
+  }
 }
 .container .why-use {
   height: 420px;
