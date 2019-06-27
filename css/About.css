@@ -54,6 +54,7 @@
 }
 .sharing-visual {
   width: 100%;
+  height: auto;
 }
 .tagline {
   margin-top: -900px;
@@ -65,24 +66,27 @@
 }
 .intro {
   display: flex;
-  justify-content: flex-start;
+  width: 90%;
 }
 .intro .about {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 20px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 120px;
 }
 .intro .intro-img {
   width: 100%;
+  height: auto;
 }
 .community {
   display: flex;
+  margin-left: 120px;
 }
 .community .community-img {
   width: 30%;
   height: 30%;
-  margin: 100px 40px 20px 20px;
+  margin: 100px 40px 20px 0;
+  box-shadow: -10px 10px 5px LightSteelBlue;
 }
 .community .community-content {
   margin: 80px 40px 20px 20px;
@@ -97,8 +101,8 @@
 }
 .trust .trust-img {
   width: 30%;
-  height: 40%;
-  margin: 100px 20px 20px 0;
+  margin: 100px 120px 20px 0;
+  box-shadow: 10px 10px 5px grey;
 }
 .trust .trust-content {
   margin: 80px 40px 20px 200px;
@@ -110,11 +114,13 @@
 }
 .team {
   display: flex;
+  margin-left: 120px;
 }
 .team .team-img {
   width: 30%;
   height: 30%;
-  margin: 100px 40px 20px 20px;
+  margin: 100px 40px 20px 0;
+  box-shadow: -10px 10px 5px red;
 }
 .team .team-content {
   margin: 80px 40px 20px 20px;
