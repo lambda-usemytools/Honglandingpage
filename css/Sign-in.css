@@ -54,10 +54,11 @@
 }
 .box {
   height: 501px;
-  width: 70%;
+  width: 45%;
   background-color: #EDE3C2;
   position: absolute;
-  left: 15%;
+  left: 20%;
+  right: 10%;
   margin-top: -300px;
 }
 .box h2 {
@@ -68,14 +69,17 @@
   line-height: 44px;
   margin: 20px 0 0 40px;
 }
-.box form {
+.box .fill {
+  padding: 80px 60px 50px 60px;
+}
+.box .fill form {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
 }
-.box input {
+.box .fill input {
   height: 40px;
   width: 500px;
   background-color: #E9E8E4;
