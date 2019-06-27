@@ -93,14 +93,15 @@
     display: flex;
     margin-left: 120px;
 
-
     .community-img{
         width: 30%;
         height: 30%;
         margin: 100px 40px 20px 0;
         box-shadow: -10px 10px 5px CornflowerBlue;
-        
-    }
+            
+        }
+    
+
 
 
     .community-content{
@@ -154,7 +155,7 @@
         font-size: 20px;
     }
 
-    button{
+    .click{
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -164,8 +165,34 @@
         background-color: red;
         color: #EDE3C2;	
         font-family: "Avenir Next";	
-        font-size: 24px;	
+        font-size: 24px;
     }
+
+    .extra-btn{
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;	
+        background-color: white;
+        color: red;	
+        font-family: "Avenir Next";	
+        font-size: 24px;
+    }
+
+    i {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
 }
 
 // .member{
@@ -219,6 +246,8 @@
     flex-wrap: wrap;
     margin-left: 120px;
     margin-top: 40px;
+    border: 3px solid red;
+    padding: 20px 0 20px 20px;
 
     h5{
         color: #1E3A46;	
