@@ -35,14 +35,14 @@ function mouseHandlerButton(){
 
 const firstButton = document.querySelector(".btn");
 
-firstButton.addEventListener("mouseover",mouseHandlerButton);
+firstButton.addEventListener("mouseover", mouseHandlerButton);
 firstButton.addEventListener("mouseout",(event)=>{
     event.target.style.backgroundColor = " #488EAC"
 });
 
 const secondButton = document.querySelector(".btn-2");
 
-secondButton.addEventListener("mousemove", mouseHandlerButton);
+secondButton.addEventListener("mouseover", mouseHandlerButton);
 secondButton.addEventListener("mouseout",(event)=>{
     event.target.style.backgroundColor = "#DAAB1D"
     event.target.style.color = "#336277"
@@ -50,8 +50,10 @@ secondButton.addEventListener("mouseout",(event)=>{
 
 const thirdButton = document.querySelector(".btn-3");
 
-thirdButton.addEventListener("mousemove",mouseHandlerButton);
+thirdButton.addEventListener("mouseover",mouseHandlerButton);
 thirdButton.addEventListener("mouseout",(event)=>{
     event.target.style.backgroundColor = "#488EAC"
 });
+
+
 
