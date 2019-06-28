@@ -66,6 +66,14 @@
   margin-top: -300px;
   margin-bottom: 300px;
 }
+@media (max-width: 500px) {
+  .box {
+    width: 70%;
+    height: 630px;
+    left: 15%;
+    margin-top: -100px;
+  }
+}
 .box h2 {
   color: #41340C;
   font-family: "Avenir Next";
@@ -73,6 +81,11 @@
   font-weight: 600;
   line-height: 44px;
   margin: 20px 0 0 40px;
+}
+@media (max-width: 500px) {
+  .box h2 {
+    font-size: 24px;
+  }
 }
 .box .content {
   display: flex;
@@ -83,12 +96,24 @@
 .box .content .fill {
   padding: 20px 60px 0 60px;
 }
+@media (max-width: 500px) {
+  .box .content .fill {
+    width: 40%;
+    padding: 40px 30px 0 0;
+    margin-left: -80px;
+  }
+}
 .box .content .fill form {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
+}
+@media (max-width: 500px) {
+  .box .content .fill form {
+    font-size: 16px;
+  }
 }
 .box .content .fill form input {
   height: 40px;
@@ -97,6 +122,12 @@
   font-size: 16px;
   font-family: "Avenir Next";
   margin: 0 0 30px 0;
+}
+@media (max-width: 500px) {
+  .box .content .fill form input {
+    width: 250px;
+    margin: 0 0 10px 0;
+  }
 }
 .box .content p {
   color: #352720;
@@ -114,6 +145,13 @@
   border-radius: 6px;
   background-color: #DAAB1D;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .box .content button {
+    width: 60%;
+    font-size: 24px;
+    margin-top: 20px;
+  }
 }
 .ask {
   color: #352720;
