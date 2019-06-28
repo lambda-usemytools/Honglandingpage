@@ -64,15 +64,38 @@
   font-size: 40px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .tagline {
+    display: none;
+  }
+}
 .intro {
   display: flex;
   width: 90%;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+@media (max-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .intro .about {
   color: #1E3A46;
   font-family: "Avenir Next";
-  font-size: 20px;
-  margin: 0 20px 0 120px;
+  font-size: 16px;
+  margin: 0 20px 0 0;
+}
+@media (max-width: 500px) {
+  .intro .about {
+    margin: 0;
+  }
 }
 .intro .intro-img {
   width: 100%;
@@ -82,11 +105,27 @@
   display: flex;
   margin-left: 120px;
 }
+@media (max-width: 500px) {
+  .community {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
 .community .community-img {
   width: 30%;
   height: 30%;
   margin: 100px 40px 20px 0;
   box-shadow: -10px 10px 5px CornflowerBlue;
+}
+@media (max-width: 500px) {
+  .community .community-img {
+    width: 80%;
+    height: 300px;
+    margin: 0;
+  }
 }
 .community .community-content {
   margin: 80px 40px 20px 20px;
@@ -94,15 +133,37 @@
   font-family: "Avenir Next";
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  .community .community-content {
+    text-align: center;
+    margin: 0;
+  }
+}
 .trust {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .trust {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
 .trust .trust-img {
   width: 30%;
   margin: 100px 120px 20px 0;
   box-shadow: 10px 10px 5px grey;
+}
+@media (max-width: 500px) {
+  .trust .trust-img {
+    width: 80%;
+    height: 300px;
+    margin: 0;
+  }
 }
 .trust .trust-content {
   margin: 80px 40px 20px 200px;
@@ -112,9 +173,25 @@
   width: 50%;
   text-align: end;
 }
+@media (max-width: 500px) {
+  .trust .trust-content {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+}
 .team {
   display: flex;
   margin-left: 120px;
+}
+@media (max-width: 500px) {
+  .team {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-top: 30px;
+    align-items: center;
+  }
 }
 .team .team-img {
   width: 30%;
@@ -122,11 +199,24 @@
   margin: 100px 40px 20px 0;
   box-shadow: -10px 10px 5px red;
 }
+@media (max-width: 500px) {
+  .team .team-img {
+    width: 80%;
+    height: 300px;
+    margin: 0;
+  }
+}
 .team .team-content {
   margin: 80px 40px 20px 20px;
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 20px;
+}
+@media (max-width: 500px) {
+  .team .team-content {
+    text-align: center;
+    margin: 0;
+  }
 }
 .team .click {
   text-align: center;
@@ -140,6 +230,11 @@
   font-family: "Avenir Next";
   font-size: 24px;
 }
+@media (max-width: 500px) {
+  .team .click {
+    margin-bottom: 20px;
+  }
+}
 .team .extra-btn {
   text-align: center;
   text-decoration: none;
@@ -152,27 +247,63 @@
   font-family: "Avenir Next";
   font-size: 24px;
 }
+@media (max-width: 500px) {
+  .team .extra-btn {
+    display: none;
+  }
+}
 .team i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
+@media (max-width: 500px) {
+  .team i {
+    display: none;
+  }
+}
 .team .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.member {
+@media (max-width: 500px) {
+  .team .right {
+    display: none;
+  }
+}
+.members {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 120px;
+  justify-content: center;
+  margin-left: 100px;
   margin-top: 40px;
-  border: 3px solid red;
-  padding: 20px 0 20px 20px;
+  border: 3px solid gray;
+  padding: 20px 20px 20px 20px;
 }
-.member h5 {
+@media (max-width: 500px) {
+  .members {
+    margin: 30px 30px 0 30px;
+    justify-content: center;
+    border: 3px solid gray;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .members img {
+    height: 200px;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+.members h5 {
   color: #1E3A46;
   font-family: "Avenir Next";
   font-size: 20px;
   padding-top: 0;
+}
+@media (max-width: 500px) {
+  .members h5 {
+    font-size: 16px;
+  }
 }
