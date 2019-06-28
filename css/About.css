@@ -307,3 +307,19 @@
     font-size: 16px;
   }
 }
+.members .icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+.members .icon .icon:before {
+  -moz-osx-font-smoothing: gray;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.members .icon .icon > .label {
+  display: none;
+}
